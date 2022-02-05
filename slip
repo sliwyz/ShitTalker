@@ -1,4 +1,4 @@
-loadstring(game:HttpGet(("https://raw.githubusercontent.com/sliwyz/super/main/work"), true))()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/sliwyz/super/main/velo"), true))()
 
 --// NOTIFICATION \\--
 game.StarterGui:SetCore("SendNotification", {
